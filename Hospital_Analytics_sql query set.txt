@@ -1,0 +1,54 @@
+
+
+SELECT COUNT(*) AS Total_Patients
+FROM Hospital_Analytics;
+ 
+ SELECT COUNT(*) AS Total_Patients
+FROM Hospital_Analytics;
+
+SELECT COUNT(bill_amount) AS Total_Revenue
+FROM Hospital_Analytics;
+ 
+ SELECT AVG (bill_amount) AS AVG_Bill
+FROM Hospital_Analytics;
+ 
+SELECT Department,
+SUM(Bill_Amount) AS Revenue
+FROM Hospital_Analytics
+GROUP BY Department
+ORDER BY Revenue DESC;
+
+SELECT department,
+COUNT(*) as patient_id
+FROM Hospital_Analytics
+GROUP BY department;
+
+select doctor,
+count(*) as total_patients
+FROM Hospital_Analytics
+GROUP by doctor
+ORDER by total_patients DESC;
+
+SELECT department,
+avg(length_of_stay_d) as avg_stay
+FROM Hospital_Analytics
+GROUP by department;
+
+SELECT gender,
+COUNT(*) as total
+FROM Hospital_Analytics
+GROUP by gender;
+
+SELECT treatment_type,
+sum(bill_amount) revenue
+FROM Hospital_Analytics
+GROUP by treatment_type
+ORDER by revenue DESC;
+
+SELECT month_date(visit_date) as month_date,
+sum(bill_amount)revenue
+FROM Hospital_Analytics
+GROUP by month(visit_date)
+ORDER by month_date;
+
+
