@@ -36,9 +36,4 @@ This project presents an end-to-end Hospital Analytics Dashboard built using Exc
 - Python Analysis
 - Power BI Dashboard
 
-## 📷 Dashboard Preview
 
-(Add your dashboard screenshot here)
-
-## 👩‍💻 Author
-**Jyoti Chaurasiya**
